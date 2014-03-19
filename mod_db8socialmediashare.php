@@ -46,7 +46,7 @@ $socialmedia = array(
         "order" => $params->get('mail'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_MAIL'),
         "htmlclass" => "maillink",
-        "href" => "mailto:ontvanger@hier.nl?subject=" . $title . "&body=" . substr(JURI::root(),0,-1).$url
+        "href" => "mailto:ontvanger@hier.nl?subject=" . $title . "&body=" . $url
     )
 );
 
