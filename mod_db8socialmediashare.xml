@@ -26,25 +26,31 @@
                            type="text"
                            default="1"
                            label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
-                           description="MOD_DB8SOCIALMEDIASHARE_TWITTER_DESC" />                    
+                           description="MOD_DB8SOCIALMEDIASHARE_TWITTER_DESC" />
 
                 <field name="facebook" 
                            type="text"
                            default="2"
                            label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
-                           description="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_DESC" />                    
+                           description="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_DESC" />
 
                 <field name="linkedin" 
                            type="text"
                            default="3"
                            label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
-                           description="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_DESC" />                    
+                           description="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_DESC" />
 
                 <field name="googleplus" 
                                type="text"
                                default="4"
                                label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
-                               description="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_DESC" />                    
+                               description="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_DESC" />
+
+                <field name="mail" 
+                               type="text"
+                               default="5"
+                               label="MOD_DB8SOCIALMEDIASHARE_MAIL_LABEL"
+                               description="MOD_DB8SOCIALMEDIASHARE_MAIL_DESC" />
             </fieldset>
             
             <fieldset name="advanced">
@@ -91,5 +97,5 @@
     </config>    
     <updateservers>
         <server type="extension" priority="1" name="mod_db8socialmediashare">http://www.db8.nl/updates/mod_db8socialmediashare.xml</server>
-    </updateservers>                          
+    </updateservers>
 </extension>
