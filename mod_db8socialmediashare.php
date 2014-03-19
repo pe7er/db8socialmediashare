@@ -7,9 +7,9 @@
  */
 defined('_JEXEC') or die;
 
-$url = JURI::current();
-$document = JFactory::getDocument();
-$title = str_replace('&', 'en', $document->getTitle("title"));
+$url        = JURI::current();
+$document   = JFactory::getDocument();
+$title      = str_replace('&', 'en', $document->getTitle("title"));
 $document->addStyleSheet('modules/mod_db8socialmediashare/tmpl/db8socialmediashare.css');
 
 $socialmedia = array(
@@ -40,6 +40,13 @@ $socialmedia = array(
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS'),
         "htmlclass" => "googlepluslink",
         "href" => "https://plus.google.com/share?url=" . $url
+    ),
+    array(
+        "medium" => "mail",
+        "order" => $params->get('mail'),
+        "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_MAIL'),
+        "htmlclass" => "maillink",
+        "href" => "mailto:ontvanger@hier.nl?subject=" . $title . "&body=" . substr(JURI::root(),0,-1).$url
     )
 );
 
