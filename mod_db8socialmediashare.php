@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package	mod_db8socialmediashare
  * @author	Peter Martin, www.db8.nl
@@ -7,10 +8,10 @@
  */
 defined('_JEXEC') or die;
 
-$url        = JURI::current();
-$document   = JFactory::getDocument();
-$title      = str_replace('&', 'en', $document->getTitle("title"));
-$document->addStyleSheet('modules/mod_db8socialmediashare/tmpl/db8socialmediashare.css');
+$url = JURI::current();
+$document = JFactory::getDocument();
+$title = str_replace('&', 'and', $document->getTitle("title"));
+$document->addStyleSheet('modules/mod_db8socialmediashare/assets/db8socialmediashare_style.css');
 
 $socialmedia = array(
     array(
@@ -42,11 +43,18 @@ $socialmedia = array(
         "href" => "https://plus.google.com/share?url=" . $url
     ),
     array(
-        "medium" => "mail",
-        "order" => $params->get('mail'),
-        "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_MAIL'),
-        "htmlclass" => "maillink",
-        "href" => "mailto:ontvanger@hier.nl?subject=" . $title . "&body=" . $url
+        "medium" => "pinterest",
+        "order" => $params->get('pinterest'),
+        "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_PINTEREST'),
+        "htmlclass" => "pinterestlink",
+        "href" => "http://pinterest.com/pin/create/button/?url=" . $url . "&amp;media=" . $params->get('logo-url-pinterest') . "&amp;description=" . $title
+    ),
+    array(
+        "medium" => "email",
+        "order" => $params->get('email'),
+        "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_EMAIL'),
+        "htmlclass" => "emaillink",
+        "href" => "mailto:?subject=" . $title . "&body=" . $url
     )
 );
 

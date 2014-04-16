@@ -9,11 +9,13 @@ defined('_JEXEC') or die;
 ?>
 <div class="db8socialmediashare<?php echo $params->get('moduleclass_sfx'); ?>">
     <?php
-    for ($i = 1; $i <= 5; $i++) {
-        for ($a = 0; $a <= 4; $a++) {
+    for ($i = 1; $i <= count($socialmedia); $i++) {
+        for ($a = 0; $a <= (count($socialmedia) - 1); $a++) {
             if ($socialmedia[$a]['order'] == $i) {
                 ?>
-                <a title="<?php echo $socialmedia[$a]['mouseover']; ?>" class="<?php echo $socialmedia[$a]['htmlclass']; ?>" href="<?php echo $socialmedia[$a]['href']; ?>" target="_blank">&nbsp;</a>
+                <a title="<?php echo $socialmedia[$a]['mouseover']; ?>" class="<?php echo $socialmedia[$a]['htmlclass']; ?>" href="<?php echo $socialmedia[$a]['href']; ?>" target="_blank">
+                    <span class="icon-<?php echo $socialmedia[$a]['medium']; ?>"></span>
+                </a>
                 <?php
             }
         }
