@@ -13,7 +13,7 @@
     <files>
         <filename module="mod_db8socialmediashare">mod_db8socialmediashare.php</filename>
         <filename>mod_db8socialmediashare.xml</filename>
-        <folder>images</folder>
+        <folder>assets</folder>
         <folder>language</folder>
         <folder>tmpl</folder>
     </files>
