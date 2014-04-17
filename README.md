@@ -1,5 +1,4 @@
-db8 Social Media Share version 1.1
-for Joomla 3.2
+db8 Social Media Share for Joomla 3.2
 
 Most Social Media extensions had too much options for me. 
 So I created a small social media share module with only the functionality that I needed.
