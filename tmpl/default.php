@@ -6,6 +6,9 @@
  * @license	GNU General Public License version 2 or later.
  */
 defined('_JEXEC') or die;
+$document = JFactory::getDocument();
+// add minified CSS stylesheet (original CSS: db8socialmediashare_style.css)
+$document->addStyleSheet('modules/mod_db8socialmediashare/assets/db8socialmediashare_style-min.css');
 ?>
 <div class="db8socialmediashare<?php echo $params->get('moduleclass_sfx'); ?>">
     <?php

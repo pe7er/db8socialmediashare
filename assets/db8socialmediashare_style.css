@@ -55,41 +55,42 @@
     text-decoration: none;
 }
 
+/* email icon */
 .icon-email{
     color: grey;
 }
 a:hover > .icon-email{
     color: red;
 }
-
+/* google+ icon */
 .icon-googleplus{
     color:#da4834;
 }
 a:hover > .icon-googleplus{
     color: red;
 }
-
+/* facebook icon */
 .icon-facebook{
     color:#425f9c;
 }
 a:hover > .icon-facebook{
     color: red;
 }
-
+/* twitter icon */
 .icon-twitter{
     color:#55acee;
 }
 a:hover > .icon-twitter{
     color: red;
 }
-
+/* linkedin icon */
 .icon-linkedin{
     color:#1b86bd;
 }
 a:hover > .icon-linkedin{
     color: red;
 }
-
+/* pinterest icon */
 .icon-pinterest{
     color: #da4834;
 }

@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 $url = JURI::current();
 $document = JFactory::getDocument();
 $title = str_replace('&', 'and', $document->getTitle("title"));
-$document->addStyleSheet('modules/mod_db8socialmediashare/assets/db8socialmediashare_style.css');
 
 $socialmedia = array(
     array(
