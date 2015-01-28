@@ -19,8 +19,5 @@ Version 1.0
 Has 4 image icons for Twitter, Facebook, LinkedIn, and Google+.
 
 
-Greetings,
-Peter Martin
-www.db8.nl
-
-https://github.com/pe7er
+Thanks to:
+* Marc Antoine Thevenet - for Translation of fr-FR language pack.
