@@ -125,6 +125,21 @@
 					description="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_DESC" />
 			</fieldset>
 
+			<fieldset name="css" label="MOD_DB8SOCIALMEDIASHARE_FIELDSET_CSS_LABEL">
+				<field
+					name="LoadCSS"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_DESC">
+					<option value="1">
+						JYES</option>
+					<option value="0">
+						JNO</option>
+				</field>
+			</fieldset>
+
 			<fieldset name="advanced">
 				<field
 					name="layout"
