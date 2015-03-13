@@ -19,42 +19,42 @@ $socialmedia = array(
         "medium" => "twitter",
         "order" => $params->get('twitter'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_TWITTER'), $params->get('twitterlinktext'),
-        "htmlclass" => "twitterlink",
+        "htmlclass" => $params->get('htmlclasstwitter','twitterlink'),
         "href" => "http://twitter.com/home?status=" . $title . " " . $url
     ),
     array(
         "medium" => "facebook",
         "order" => $params->get('facebook'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_FACEBOOK'),
-        "htmlclass" => "facebooklink",
+        "htmlclass" => $params->get('htmlclassfacebook','facebooklink'),
         "href" => "http://facebook.com/sharer.php?u=" . $url . "&amp;t=" . $title
     ),
     array(
         "medium" => "linkedin",
         "order" => $params->get('linkedin'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_LINKEDIN'),
-        "htmlclass" => "linkedinlink",
+        "htmlclass" => $params->get('htmlclasslinkedin','linkedinlink'),
         "href" => "http://www.linkedin.com/shareArticle?mini=true&url=" . $url . "&title=" . $title . "&ro=false"
     ),
     array(
-        "medium" => "googleplus",
+        "medium" => "google-plus",
         "order" => $params->get('googleplus'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS'),
-        "htmlclass" => "googlepluslink",
+        "htmlclass" => $params->get('htmlclassgoogleplus','googlepluslink'),
         "href" => "https://plus.google.com/share?url=" . $url
     ),
     array(
         "medium" => "pinterest",
         "order" => $params->get('pinterest'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_PINTEREST'),
-        "htmlclass" => "pinterestlink",
+        "htmlclass" => $params->get('htmlclasspinterest','pinterestlink'),
         "href" => "http://pinterest.com/pin/create/button/?url=" . $url . "&amp;media=" . $params->get('logo-url-pinterest') . "&amp;description=" . $title
     ),
     array(
         "medium" => "email",
         "order" => $params->get('email'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_EMAIL'),
-        "htmlclass" => "emaillink",
+        "htmlclass" => $params->get('htmlclassemail','emaillink'),
         "href" => "mailto:?subject=" . $title . "&body=" . $url
     )
 );
