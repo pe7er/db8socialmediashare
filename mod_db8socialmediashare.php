@@ -51,7 +51,7 @@ $socialmedia = array(
         "href" => "http://pinterest.com/pin/create/button/?url=" . $url . "&amp;media=" . $params->get('logo-url-pinterest') . "&amp;description=" . $title
     ),
     array(
-        "medium" => "email",
+        "medium" => "envelope",
         "order" => $params->get('email'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_EMAIL'),
         "htmlclass" => $params->get('htmlclassemail','emaillink'),
@@ -59,4 +59,4 @@ $socialmedia = array(
     )
 );
 
-require JModuleHelper::getLayoutPath('mod_db8socialmediashare', 'default');
+require JModuleHelper::getLayoutPath('mod_db8socialmediashare', $params->get('layout', 'default'));

@@ -29,10 +29,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-email:before {
+.icon-envelope:before {
     content: "\e603";
 }
-.icon-googleplus:before {
+.icon-google-plus:before {
     content: "\e604";
 }
 .icon-facebook:before {
@@ -56,17 +56,17 @@
 }
 
 /* email icon */
-.icon-email{
+.icon-envelope{
     color: grey;
 }
-a:hover > .icon-email{
+a:hover > .icon-envelope{
     color: red;
 }
 /* google+ icon */
-.icon-googleplus{
+.icon-google-plus{
     color:#da4834;
 }
-a:hover > .icon-googleplus{
+a:hover > .icon-google-plus{
     color: red;
 }
 /* facebook icon */
