@@ -2,12 +2,12 @@
 <extension type="module" version="3.2" client="site" method="upgrade">
 	<name>MOD_DB8SOCIALMEDIASHARE</name>
 	<author>Peter Martin</author>
-	<creationDate>April 2014</creationDate>
-	<copyright>Copyright (C) 2014 by Peter Martin. All rights reserved.</copyright>
+	<creationDate>March 2015</creationDate>
+	<copyright>Copyright (C) 2015 by Peter Martin. All rights reserved.</copyright>
 	<license>GNU General Public License version 2</license>
 	<authorEmail>joomla@db8.nl</authorEmail>
 	<authorUrl>www.db8.nl</authorUrl>
-	<version>1.4.1</version>
+	<version>1.4.2</version>
 	<description>MOD_DB8SOCIALMEDIASHARE_XML_DESCRIPTION</description>
 
 	<files>
@@ -20,102 +20,63 @@
 
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="orderingtext"
-					type="spacer"
-					class="text"
-					label="MOD_DB8SOCIALMEDIASHARE_TEXT_ORDER_LABEL" />
 
-				<field
-					name="twitter"
-					type="list"
-					default="1"
-					label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
-					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_TWITTER_DESC">
-					<option value="0">0</option>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-				</field>
+            <fieldset name="basic">
 
-				<field
-					name="facebook"
-					type="list"
-					default="2"
-					label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
-					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_FACEBOOK_DESC">
-					<option value="0">0</option>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-				</field>
+                <field
+                        name="orderingtext"
+                        type="spacer"
+                        class="text"
+                        label="MOD_DB8SOCIALMEDIASHARE_TEXT_ORDER_LABEL" />
 
-				<field
-					name="linkedin"
-					type="list"
-					default="3"
-					label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
-					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_LINKEDIN_DESC">
-					<option value="0">0</option>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-				</field>
+                <field
+                        name="twitter"
+                        type="text"
+                        default="1"
+                        label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_TWITTER_DESC">
+                </field>
 
-				<field
-					name="googleplus"
-					type="list"
-					default="4"
-					label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
-					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_GOOGLEPLUS_DESC">
-					<option value="0">JHIDE</option>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-				</field>
+                <field
+                        name="facebook"
+                        type="text"
+                        default="2"
+                        label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_FACEBOOK_DESC">
+                </field>
 
-				<field
-					name="email"
-					type="list"
-					default="5"
-					label="MOD_DB8SOCIALMEDIASHARE_EMAIL_LABEL"
-					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_EMAIL_DESC">
-					<option value="0">J0</option>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-				</field>
+                <field
+                        name="linkedin"
+                        type="text"
+                        default="3"
+                        label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_LINKEDIN_DESC">
+                </field>
 
-				<field
-					name="pinterest"
-					type="list"
-					default="6"
-					label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
-					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_PINTEREST_DESC">
-					<option value="0">J0</option>
-					<option value="1">J1</option>
-					<option value="2">J2</option>
-					<option value="3">J3</option>
-					<option value="4">J4</option>
-					<option value="5">J5</option>
-					<option value="6">J6</option>
-				</field>
+                <field
+                        name="googleplus"
+                        type="text"
+                        default="4"
+                        label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_GOOGLEPLUS_DESC">
+                    type="text"
+                </field>
+
+                <field
+                        name="email"
+                        type="text"
+                        default="5"
+                        label="MOD_DB8SOCIALMEDIASHARE_EMAIL_LABEL"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_EMAIL_DESC">
+                </field>
+
+                <field
+                        name="pinterest"
+                        type="text"
+                        default="6"
+                        label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_PINTEREST_DESC">
+                </field>
 
 				<field
 					name="logo-url-pinterest"
@@ -126,6 +87,7 @@
 			</fieldset>
 
 			<fieldset name="css" label="MOD_DB8SOCIALMEDIASHARE_FIELDSET_CSS_LABEL">
+
 				<field
 					name="LoadCSS"
 					type="radio"
@@ -186,9 +148,11 @@
 					default="pinterestlink"
 					label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
 					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSPINTEREST_DESC" />
+
 			</fieldset>
 
 			<fieldset name="advanced">
+
 				<field
 					name="layout"
 					type="modulelayout"
