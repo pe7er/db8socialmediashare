@@ -1,114 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.2" client="site" method="upgrade">
-    <name>MOD_DB8SOCIALMEDIASHARE</name>
-    <author>Peter Martin</author>
-    <creationDate>April 2014</creationDate>
-    <copyright>Copyright (C) 2014 by Peter Martin. All rights reserved.</copyright>
-    <license>GNU General Public License version 2</license>
-    <authorEmail>joomla@db8.nl</authorEmail>
-    <authorUrl>www.db8.nl</authorUrl>
-    <version>1.4</version>
-    <description>MOD_DB8SOCIALMEDIASHARE_XML_DESCRIPTION</description>
+	<name>MOD_DB8SOCIALMEDIASHARE</name>
+	<author>Peter Martin</author>
+	<creationDate>April 2014</creationDate>
+	<copyright>Copyright (C) 2014 by Peter Martin. All rights reserved.</copyright>
+	<license>GNU General Public License version 2</license>
+	<authorEmail>joomla@db8.nl</authorEmail>
+	<authorUrl>www.db8.nl</authorUrl>
+	<version>1.4.1</version>
+	<description>MOD_DB8SOCIALMEDIASHARE_XML_DESCRIPTION</description>
 
-    <files>
-        <filename module="mod_db8socialmediashare">mod_db8socialmediashare.php</filename>
-        <filename>mod_db8socialmediashare.xml</filename>
-        <folder>assets</folder>
-        <folder>language</folder>
-        <folder>tmpl</folder>
-    </files>
+	<files>
+		<filename module="mod_db8socialmediashare">mod_db8socialmediashare.php</filename>
+		<filename>mod_db8socialmediashare.xml</filename>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
 
-    <config>
-        <fields name="params">
-            
-            <fieldset name="basic">
-                <field name="twitter" 
-                       type="text"
-                       default="1"
-                       label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_TWITTER_DESC" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="orderingtext"
+					type="spacer"
+					class="text"
+					label="MOD_DB8SOCIALMEDIASHARE_TEXT_ORDER_LABEL" />
 
-                <field name="facebook" 
-                       type="text"
-                       default="2"
-                       label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_DESC" />
+				<field
+					name="twitter"
+					type="list"
+					default="1"
+					label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_TWITTER_DESC">
+					<option value="0">0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+				</field>
 
-                <field name="linkedin" 
-                       type="text"
-                       default="3"
-                       label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_DESC" />
+				<field
+					name="facebook"
+					type="list"
+					default="2"
+					label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_FACEBOOK_DESC">
+					<option value="0">0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+				</field>
 
-                <field name="googleplus" 
-                       type="text"
-                       default="4"
-                       label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_DESC" />
+				<field
+					name="linkedin"
+					type="list"
+					default="3"
+					label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_LINKEDIN_DESC">
+					<option value="0">0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+				</field>
 
-                <field name="email" 
-                       type="text"
-                       default="5"
-                       label="MOD_DB8SOCIALMEDIASHARE_EMAIL_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_EMAIL_DESC" />
-                
-                <field name="pinterest" 
-                       type="text"
-                       default="6"
-                       label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_PINTEREST_DESC" />
+				<field
+					name="googleplus"
+					type="list"
+					default="4"
+					label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_GOOGLEPLUS_DESC">
+					<option value="0">JHIDE</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+				</field>
 
-                <field name="logo-url-pinterest" 
-                       type="text"
-                       default=""
-                       label="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_LABEL"
-                       description="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_DESC" />
-                                              
-            </fieldset>
-            
-            <fieldset name="advanced">
-                <field name="layout"
-                       type="modulelayout"
-                       label="JFIELD_ALT_LAYOUT_LABEL"
-                       description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="email"
+					type="list"
+					default="5"
+					label="MOD_DB8SOCIALMEDIASHARE_EMAIL_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_EMAIL_DESC">
+					<option value="0">J0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+				</field>
 
-                <field  name="moduleclass_sfx"
-                        type="textarea" rows="3"
-                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="pinterest"
+					type="list"
+					default="6"
+					label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_PINTEREST_DESC">
+					<option value="0">J0</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+				</field>
 
-                <field  name="cache"
-                        type="list"
-                        default="1"
-                        label="COM_MODULES_FIELD_CACHING_LABEL"
-                        description="COM_MODULES_FIELD_CACHING_DESC">
-                    <option
-                        value="1">JGLOBAL_USE_GLOBAL</option>
-                    <option
-                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
-                </field>
+				<field
+					name="logo-url-pinterest"
+					type="text"
+					default=""
+					label="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_DESC" />
+			</fieldset>
 
-                <field
-                    name="cache_time"
-                    type="text"
-                    default="900"
-                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
-                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			<fieldset name="css" label="MOD_DB8SOCIALMEDIASHARE_FIELDSET_CSS_LABEL">
+				<field
+					name="LoadCSS"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_DESC">
+					<option value="1">
+						JYES</option>
+					<option value="0">
+						JNO</option>
+				</field>
 
-                <field
-                    name="cachemode"
-                    type="hidden"
-                    default="itemid">
-                    <option
-                        value="itemid">
-                    </option>
-                </field>
+				<field
+					name="htmlclass"
+					type="spacer"
+					class="text"
+					label="MOD_DB8SOCIALMEDIASHARE_TEXT_HTMLCLASS_LABEL" />
 
-            </fieldset>
+				<field
+					name="htmlclasstwitter"
+					type="text"
+					default="twitterlink"
+					label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_DESC" />
 
-        </fields>
-    </config>
-    <updateservers>
-        <server type="extension" priority="1" name="mod_db8socialmediashare">http://www.db8.nl/updates/mod_db8socialmediashare.xml</server>
-    </updateservers>
+				<field
+					name="htmlclassfacebook"
+					type="text"
+					default="facebooklink"
+					label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSFACEBOOK_DESC" />
+
+				<field
+					name="htmlclasslinkedin"
+					type="text"
+					default="linkedinlink"
+					label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSLINKEDIN_DESC" />
+
+				<field
+					name="htmlclassgoogleplus"
+					type="text"
+					default="googlepluslink"
+					label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSGOOGLEPLUS_DESC" />
+
+				<field
+					name="htmlclassemail"
+					type="text"
+					default="emaillink"
+					label="MOD_DB8SOCIALMEDIASHARE_EMAIL_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSEMAIL_DESC" />
+
+				<field
+					name="htmlclasspinterest"
+					type="text"
+					default="pinterestlink"
+					label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
+					description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSPINTEREST_DESC" />
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" priority="1" name="mod_db8socialmediashare">http://www.db8.nl/updates/mod_db8socialmediashare.xml</server>
+	</updateservers>
 </extension>
