@@ -7,7 +7,7 @@
  */
 defined('_JEXEC') or die;
 
-if ($loadCSS = 1)
+if ($loadCSS == 1)
 {
 	$document = JFactory::getDocument();
 	// add minified CSS stylesheet (original CSS: db8socialmediashare_style.css)
