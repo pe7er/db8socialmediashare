@@ -29,7 +29,7 @@ $socialmedia = array(
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_FACEBOOK'),
         "htmlclass" => $params->get('htmlclassfacebook','facebooklink'),
         "href" => "http://facebook.com/sharer.php?u=" . $url . "&amp;t=" . $title,
-        "image" => $params->get('imagegfacebook'),
+        "image" => $params->get('imagefacebook'),
     ),
     array(
         "medium" => "linkedin",
