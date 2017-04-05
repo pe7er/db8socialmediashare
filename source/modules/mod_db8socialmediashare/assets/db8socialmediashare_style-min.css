@@ -1,1 +1,104 @@
-@font-face{font-family:icomoon;src:url(fonts/icomoon.eot?pkxtcw);src:url(fonts/icomoon.eot?#iefixpkxtcw) format('embedded-opentype'),url(fonts/icomoon.woff?pkxtcw) format('woff'),url(fonts/icomoon.ttf?pkxtcw) format('truetype'),url(fonts/icomoon.svg?pkxtcw#icomoon) format('svg');font-weight:400;font-style:normal}[class*=" icon-"],[class^=icon-]{font-family:icomoon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}  .icon-envelope:before{content:"\e603"}  .icon-google-plus:before{content:"\e604"}  .icon-facebook:before{content:"\e605"}  .icon-twitter:before{content:"\e606"}  .icon-linkedin:before{content:"\e607"}  .icon-pinterest:before{content:"\e600"}  .db8socialmediashare a{font-size:20px;padding:2px;text-decoration:none}  .icon-envelope{color:grey}  a:hover>.icon-envelope{color:red}  .icon-google-plus{color:#da4834}  a:hover>.icon-google-plus{color:red}  .icon-facebook{color:#425f9c}  a:hover>.icon-facebook{color:red}  .icon-twitter{color:#55acee}  a:hover>.icon-twitter{color:red}  .icon-linkedin{color:#1b86bd}  a:hover>.icon-linkedin{color:red}  .icon-pinterest{color:#da4834}  a:hover>.icon-pinterest{color:red}
+/* CSS file for mod_db8socialmediashare */
+/* Author: Peter Martin, www.db8.nl */
+/* Copyright (C) 2015 Peter Martin. All rights reserved. */
+/* License: GNU General Public License version 2 or later. */
+/* Icons were made with http://icomoon.io/app/ */
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?pkxtcw');
+    src:url('fonts/icomoon.eot?#iefixpkxtcw') format('embedded-opentype'),
+        url('fonts/icomoon.woff?pkxtcw') format('woff'),
+        url('fonts/icomoon.ttf?pkxtcw') format('truetype'),
+        url('fonts/icomoon.svg?pkxtcw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+    content: "\e603";
+}
+.icon-google-plus:before {
+    content: "\e604";
+}
+.icon-facebook:before {
+    content: "\e605";
+}
+.icon-twitter:before {
+    content: "\e606";
+}
+.icon-linkedin:before {
+    content: "\e607";
+}
+.icon-pinterest:before {
+    content: "\e600";
+}
+
+/* styling of the icons */
+.db8socialmediashare a{
+    font-size:20px;
+    padding:2px;
+    text-decoration: none;
+}
+
+/* email icon */
+.icon-envelope{
+    color: grey;
+}
+a:hover > .icon-envelope{
+    color: red;
+}
+/* google+ icon */
+.icon-google-plus{
+    color:#da4834;
+}
+a:hover > .icon-google-plus{
+    color: red;
+}
+/* facebook icon */
+.icon-facebook{
+    color:#425f9c;
+}
+a:hover > .icon-facebook{
+    color: red;
+}
+/* twitter icon */
+.icon-twitter{
+    color:#55acee;
+}
+a:hover > .icon-twitter{
+    color: red;
+}
+/* linkedin icon */
+.icon-linkedin{
+    color:#1b86bd;
+}
+a:hover > .icon-linkedin{
+    color: red;
+}
+/* pinterest icon */
+.icon-pinterest{
+    color: #da4834;
+}
+a:hover > .icon-pinterest{
+    color: red;
+}
+.hidelink{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
