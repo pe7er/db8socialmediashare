@@ -52,7 +52,7 @@
                 <field
                         name="imagetwitter"
                         type="media"
-                        default="twitter.png"
+                        default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-twitter.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_TWITTER_IMAGE_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
                         showon="imgcss:0"
@@ -70,7 +70,7 @@
                 <field
                         name="imagefacebook"
                         type="media"
-                        default="facebook.png"
+                        default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-facebook.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_IMAGE_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
                         showon="imgcss:0"
@@ -89,7 +89,7 @@
                 <field
                         name="imagelinkedin"
                         type="media"
-                        default="linkedin.png"
+                        default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-linkedin.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_IMAGE_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
                         showon="imgcss:0"
@@ -107,7 +107,7 @@
                 <field
                         name="imagegoogleplus"
                         type="media"
-                        default="twitter.png"
+                        default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-google-plus.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_IMAGE_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
                         showon="imgcss:0"
@@ -126,7 +126,7 @@
                 <field
                         name="imageemail"
                         type="media"
-                        default="email.png"
+                        default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-email.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_EMAIL_IMAGE_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
                         showon="imgcss:0"
@@ -144,7 +144,7 @@
                 <field
                         name="imagepinterest"
                         type="media"
-                        default="pinterest.png"
+                        default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-pinterest.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_IMAGE_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
                         showon="imgcss:0"

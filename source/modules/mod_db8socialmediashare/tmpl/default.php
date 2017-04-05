@@ -24,6 +24,9 @@ if ($loadCSS == 1)
                    class="<?php echo $socialmedia[$a]['htmlclass']; ?>"
                    href="<?php echo $socialmedia[$a]['href']; ?>"
                    target="_blank">
+                    <span class="hidelink">
+                        <?php echo $socialmedia[$a]['medium']; ?>
+                    </span>
                     <span class="icon-<?php echo $socialmedia[$a]['medium']; ?>"></span>
                 </a>
                 <?php

@@ -97,3 +97,8 @@ a:hover > .icon-linkedin{
 a:hover > .icon-pinterest{
     color: red;
 }
+.hidelink{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
