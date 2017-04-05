@@ -2,17 +2,18 @@
 <extension type="module" version="3.2" client="site" method="upgrade">
     <name>MOD_DB8SOCIALMEDIASHARE</name>
     <author>Peter Martin</author>
-    <creationDate>March 2015</creationDate>
-    <copyright>Copyright (C) 2015 by Peter Martin. All rights reserved.</copyright>
+    <creationDate>April 2017</creationDate>
+    <copyright>Copyright (C) 2015-2017 by Peter Martin. All rights reserved.</copyright>
     <license>GNU General Public License version 2</license>
     <authorEmail>joomla@db8.nl</authorEmail>
     <authorUrl>www.db8.nl</authorUrl>
-    <version>1.4.2</version>
+    <version>1.5</version>
     <description>MOD_DB8SOCIALMEDIASHARE_XML_DESCRIPTION</description>
 
     <files>
         <filename module="mod_db8socialmediashare">mod_db8socialmediashare.php</filename>
         <filename>mod_db8socialmediashare.xml</filename>
+        <filename>helper.php</filename>
         <folder>assets</folder>
         <folder>language</folder>
         <folder>tmpl</folder>
