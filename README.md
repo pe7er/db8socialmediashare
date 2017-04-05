@@ -1,7 +1,10 @@
 db8 Social Media Share for Joomla 3.4
 
 Most Social Media extensions had too much options for me. 
-So I created a small social media share module with only the functionality that I needed.
+Some of them download JavaScript from external sites to show how many of your friends have shared the page.
+Besides of a performance decrease because of the loading, it can also cause privacy issues.
+
+Therefore I created a small social media share module with only the functionality that I needed. 
 
 You can configure the order of the buttons and visibility (order "0" = invisible). When a visitor clicks on one of the buttons, it opens a small window where the visitor can change the text with link to your page. It does not use JavaScript, nor does it communicate any information to the social media websites if the buttons are not clicked.
 
@@ -23,5 +26,6 @@ Has 4 image icons for Twitter, Facebook, LinkedIn, and Google+.
 
 
 Thanks to:
-* Marc Antoine Thevenet - for Translation of fr-FR language pack.
-* Hans Kuijpers - for corrections + conditional loading CSS
+* Armen Mnatsian @armenos - For help with making this module accessible.
+* Marc Antoine Thevenet @MATsxm - for Translation of fr-FR language pack.
+* Hans Kuijpers @hans2103 - for corrections + conditional loading CSS
