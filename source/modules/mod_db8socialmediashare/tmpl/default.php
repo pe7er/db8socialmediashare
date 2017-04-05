@@ -20,13 +20,9 @@ if ($loadCSS == 1)
         for ($a = 0; $a <= (count($socialmedia) - 1); $a++) {
             if ($socialmedia[$a]['order'] == $i) {
                 ?>
-                <a title="<?php echo $socialmedia[$a]['mouseover']; ?>"
-                   class="<?php echo $socialmedia[$a]['htmlclass']; ?>"
-                   href="<?php echo $socialmedia[$a]['href']; ?>"
-                   target="_blank">
+                <a title="<?php echo $socialmedia[$a]['mouseover']; ?>" class="<?php echo $socialmedia[$a]['htmlclass']; ?>" href="<?php echo $socialmedia[$a]['href']; ?>" target="_blank">
                     <?php if($params->get('imgcss') == 0) : ?>
                         <img src=".<?php echo $socialmedia[$a]['image']; ?>" alt="<?php echo $socialmedia[$a]['medium']; ?>">
-
                     <?php else: ?>
                         <span class="hidelink">
                             <?php echo $socialmedia[$a]['medium']; ?>

@@ -20,7 +20,7 @@ $socialmedia = array(
         "order" => $params->get('twitter'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_TWITTER'), $params->get('twitterlinktext'),
         "htmlclass" => $params->get('htmlclasstwitter','twitterlink'),
-        "href" => "http://twitter.com/home?status=" . $title . " " . $url,
+        "href" => "http://twitter.com/home?status=" . $title . "&nbsp;" . $url,
         "image" => $params->get('imagetwitter'),
     ),
     array(
