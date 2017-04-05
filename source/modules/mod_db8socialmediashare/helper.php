@@ -20,41 +20,47 @@ $socialmedia = array(
         "order" => $params->get('twitter'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_TWITTER'), $params->get('twitterlinktext'),
         "htmlclass" => $params->get('htmlclasstwitter','twitterlink'),
-        "href" => "http://twitter.com/home?status=" . $title . " " . $url
+        "href" => "http://twitter.com/home?status=" . $title . " " . $url,
+        "image" => $params->get('imagetwitter'),
     ),
     array(
         "medium" => "facebook",
         "order" => $params->get('facebook'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_FACEBOOK'),
         "htmlclass" => $params->get('htmlclassfacebook','facebooklink'),
-        "href" => "http://facebook.com/sharer.php?u=" . $url . "&amp;t=" . $title
+        "href" => "http://facebook.com/sharer.php?u=" . $url . "&amp;t=" . $title,
+        "image" => $params->get('imagegfacebook'),
     ),
     array(
         "medium" => "linkedin",
         "order" => $params->get('linkedin'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_LINKEDIN'),
         "htmlclass" => $params->get('htmlclasslinkedin','linkedinlink'),
-        "href" => "http://www.linkedin.com/shareArticle?mini=true&url=" . $url . "&title=" . $title . "&ro=false"
+        "href" => "http://www.linkedin.com/shareArticle?mini=true&url=" . $url . "&title=" . $title . "&ro=false",
+        "image" => $params->get('imagelinkedin'),
     ),
     array(
         "medium" => "google-plus",
         "order" => $params->get('googleplus'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS'),
         "htmlclass" => $params->get('htmlclassgoogleplus','googlepluslink'),
-        "href" => "https://plus.google.com/share?url=" . $url
+        "href" => "https://plus.google.com/share?url=" . $url,
+        "image" => $params->get('imagegoogleplus'),
     ),
     array(
         "medium" => "pinterest",
         "order" => $params->get('pinterest'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_PINTEREST'),
         "htmlclass" => $params->get('htmlclasspinterest','pinterestlink'),
-        "href" => "http://pinterest.com/pin/create/button/?url=" . $url . "&amp;media=" . $params->get('logo-url-pinterest') . "&amp;description=" . $title
+        "href" => "http://pinterest.com/pin/create/button/?url=" . $url . "&amp;media=" . $params->get('logo-url-pinterest') . "&amp;description=" . $title,
+        "image" => $params->get('imagepinterest'),
     ),
     array(
         "medium" => "envelope",
         "order" => $params->get('email'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_EMAIL'),
         "htmlclass" => $params->get('htmlclassemail','emaillink'),
-        "href" => "mailto:?subject=" . $title . "&body=" . $url
+        "href" => "mailto:?subject=" . $title . "&body=" . $url,
+        "image" => $params->get('imageemail'),
     )
 );
