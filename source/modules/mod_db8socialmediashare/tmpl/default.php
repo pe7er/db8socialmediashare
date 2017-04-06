@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package	mod_db8socialmediashare
  * @author	Peter Martin, www.db8.nl
@@ -13,6 +14,7 @@ if ($loadCSS == 1)
 	// add minified CSS stylesheet (original CSS: db8socialmediashare_style.css)
 	$document->addStyleSheet('modules/mod_db8socialmediashare/assets/db8socialmediashare_style-min.css');
 }
+
 ?>
 <div class="db8socialmediashare<?php echo $params->get('moduleclass_sfx'); ?>">
     <?php
