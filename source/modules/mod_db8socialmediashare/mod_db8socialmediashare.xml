@@ -22,10 +22,6 @@
     <config>
         <fields name="params">
 
-            <fieldset name="basic">
-
-            </fieldset>
-
             <fieldset name="icons" label="MOD_DB8SOCIALMEDIASHARE_FIELDSET_ICONS_LABEL">
 
                 <field
@@ -39,15 +35,12 @@
                         name="imgcss"
                         type="radio"
                         class="btn-group btn-group-yesno"
-                        default="1"
+                        default="0"
                         label="MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_DESC">
-                    <option value="0">
-                        MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_IMAGE
-                    </option>
-                    <option value="1">
-                        MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_CSS
-                    </option>
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_DESC"
+                        >
+                    <option value="0">MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_IMAGE</option>
+                    <option value="1">MOD_DB8SOCIALMEDIASHARE_FIELD_IMAGE_OR_CSS_CSS</option>
                 </field>
 
                 <field
@@ -55,7 +48,7 @@
                         type="media"
                         default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-twitter.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_TWITTER_IMAGE_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
+                        description="MOD_DB8SOCIALMEDIASHARE_TWITTER_IMAGE_DESC"
                         showon="imgcss:0"
                 />
 
@@ -73,7 +66,7 @@
                         type="media"
                         default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-facebook.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_IMAGE_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
+                        description="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_IMAGE_DESC"
                         showon="imgcss:0"
                 />
 
@@ -92,7 +85,7 @@
                         type="media"
                         default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-linkedin.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_IMAGE_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
+                        description="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_IMAGE_DESC"
                         showon="imgcss:0"
                 />
 
@@ -110,7 +103,7 @@
                         type="media"
                         default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-google-plus.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_IMAGE_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
+                        description="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_IMAGE_DESC"
                         showon="imgcss:0"
                 />
 
@@ -129,7 +122,7 @@
                         type="media"
                         default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-email.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_EMAIL_IMAGE_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
+                        description="MOD_DB8SOCIALMEDIASHARE_EMAIL_IMAGE_DESC"
                         showon="imgcss:0"
                 />
 
@@ -147,7 +140,7 @@
                         type="media"
                         default="/modules/mod_db8socialmediashare/assets/icons/social-1_square-pinterest.svg"
                         label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_IMAGE_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSTWITTER_IMAGE_DESC"
+                        description="MOD_DB8SOCIALMEDIASHARE_PINTEREST_IMAGE_DESC"
                         showon="imgcss:0"
                 />
 
@@ -172,9 +165,10 @@
                         name="LoadCSS"
                         type="radio"
                         class="btn-group btn-group-yesno"
-                        default="1"
+                        default="0"
                         label="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_DESC">
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_DESC"
+                        >
                     <option value="1">
                         JYES
                     </option>
@@ -183,12 +177,7 @@
                     </option>
                 </field>
 
-
-
-
-
             </fieldset>
-
 
             <fieldset name="ordering" label="MOD_DB8SOCIALMEDIASHARE_FIELDSET_ORDERING_LABEL">
 
@@ -199,19 +188,20 @@
                         label="MOD_DB8SOCIALMEDIASHARE_FIELDSET_ORDERING_INTROTEXT"
                 />
 
-
                 <field
                         name="orderingtext"
                         type="spacer"
                         class="text"
-                        label="MOD_DB8SOCIALMEDIASHARE_TEXT_ORDER_LABEL"/>
+                        label="MOD_DB8SOCIALMEDIASHARE_TEXT_ORDER_LABEL"
+                />
 
                 <field
                         name="twitter"
                         type="text"
                         default="1"
                         label="MOD_DB8SOCIALMEDIASHARE_TWITTER_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_TWITTER_DESC">
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_TWITTER_DESC"
+                        >
                 </field>
 
                 <field
@@ -304,7 +294,7 @@
                         name="cachemode"
                         type="hidden"
                         default="itemid">
-                            <option value="itemid"></option>
+                    <option value="itemid"></option>
                 </field>
             </fieldset>
         </fields>
