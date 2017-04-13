@@ -79,7 +79,6 @@
                         showon="imgcss:1"
                 />
 
-
                 <field
                         name="imagelinkedin"
                         type="media"
@@ -152,8 +151,7 @@
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_HTMLCLASSPINTEREST_DESC"
                         showon="imgcss:1"
                 />
-
-
+                
                 <field
                         name="htmlclass"
                         type="spacer"
