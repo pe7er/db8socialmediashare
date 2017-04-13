@@ -53,7 +53,4 @@ Thanks to:
 * Armen Mnatsian @armenos - For help with making this module accessible.
 * Marc Antoine Thevenet @MATsxm - for Translation of fr-FR language pack.
 * Hans Kuijpers @hans2103 - for corrections + conditional loading CSS
-
-
-Nucleo - Free Social Icons - Sebastiano Guerriero, June 2015
-https://dribbble.com/shots/2089345-Nucsvgeo-Free-Social-Icons
+* Nucleo - Free Social Icons - Sebastiano Guerriero, June 2015 https://dribbble.com/shots/2089345-Nucsvgeo-Free-Social-Icons
