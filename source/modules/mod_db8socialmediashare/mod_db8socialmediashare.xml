@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.2" client="site" method="upgrade">
+<extension type="module" version="3.1" client="site" method="upgrade">
     <name>MOD_DB8SOCIALMEDIASHARE</name>
     <author>Peter Martin</author>
     <creationDate>April 2017</creationDate>
     <copyright>Copyright (C) 2015-2017 by Peter Martin. All rights reserved.</copyright>
     <license>GNU General Public License version 2</license>
     <authorEmail>joomla@db8.nl</authorEmail>
-    <authorUrl>www.db8.nl</authorUrl>
-    <version>1.5</version>
+    <authorUrl>db8.eu</authorUrl>
+    <version>1.7</version>
     <description>MOD_DB8SOCIALMEDIASHARE_XML_DESCRIPTION</description>
 
     <files>
@@ -169,12 +169,8 @@
                         label="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_LABEL"
                         description="MOD_DB8SOCIALMEDIASHARE_FIELD_LOADCSS_DESC"
                         >
-                    <option value="1">
-                        JYES
-                    </option>
-                    <option value="0">
-                        JNO
-                    </option>
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
 
             </fieldset>
@@ -209,7 +205,8 @@
                         type="text"
                         default="2"
                         label="MOD_DB8SOCIALMEDIASHARE_FACEBOOK_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_FACEBOOK_DESC">
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_FACEBOOK_DESC"
+                        >
                 </field>
 
                 <field
@@ -217,7 +214,8 @@
                         type="text"
                         default="3"
                         label="MOD_DB8SOCIALMEDIASHARE_LINKEDIN_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_LINKEDIN_DESC">
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_LINKEDIN_DESC"
+                        >
                 </field>
 
                 <field
@@ -225,8 +223,8 @@
                         type="text"
                         default="4"
                         label="MOD_DB8SOCIALMEDIASHARE_GOOGLEPLUS_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_GOOGLEPLUS_DESC">
-                    type="text"
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_GOOGLEPLUS_DESC"
+                        >
                 </field>
 
                 <field
@@ -234,7 +232,8 @@
                         type="text"
                         default="5"
                         label="MOD_DB8SOCIALMEDIASHARE_EMAIL_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_EMAIL_DESC">
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_EMAIL_DESC"
+                        >
                 </field>
 
                 <field
@@ -242,7 +241,8 @@
                         type="text"
                         default="6"
                         label="MOD_DB8SOCIALMEDIASHARE_PINTEREST_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_PINTEREST_DESC">
+                        description="MOD_DB8SOCIALMEDIASHARE_FIELD_ORDER_PINTEREST_DESC"
+                        >
                 </field>
 
                 <field
@@ -250,10 +250,10 @@
                         type="text"
                         default=""
                         label="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_LABEL"
-                        description="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_DESC"/>
+                        description="MOD_DB8SOCIALMEDIASHARE_LOGOURLPINTEREST_DESC"
+                />
 
             </fieldset>
-
 
             <fieldset name="advanced">
 
@@ -261,26 +261,25 @@
                         name="layout"
                         type="modulelayout"
                         label="JFIELD_ALT_LAYOUT_LABEL"
-                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
+                        description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
 
                 <field
                         name="moduleclass_sfx"
                         type="textarea" rows="3"
                         label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                />
 
                 <field
                         name="cache"
                         type="list"
                         default="1"
                         label="COM_MODULES_FIELD_CACHING_LABEL"
-                        description="COM_MODULES_FIELD_CACHING_DESC">
-                    <option
-                            value="1">JGLOBAL_USE_GLOBAL
-                    </option>
-                    <option
-                            value="0">COM_MODULES_FIELD_VALUE_NOCACHING
-                    </option>
+                        description="COM_MODULES_FIELD_CACHING_DESC"
+                        >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
                 </field>
 
                 <field
@@ -288,21 +287,25 @@
                         type="text"
                         default="900"
                         label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
-                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                        description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                />
 
                 <field
                         name="cachemode"
                         type="hidden"
-                        default="itemid">
+                        default="itemid"
+                        >
                     <option value="itemid"></option>
                 </field>
+
             </fieldset>
+
         </fields>
     </config>
 
     <updateservers>
         <server type="extension" priority="1" name="mod_db8socialmediashare">
-            http://www.db8.nl/updates/mod_db8socialmediashare.xml
+            https://db8.eu/index.php?option=com_rdsubs&amp;view=updater&amp;format=xml&amp;element=mod_db8socialmediashare
         </server>
     </updateservers>
 </extension>

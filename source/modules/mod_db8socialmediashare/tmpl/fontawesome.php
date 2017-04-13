@@ -1,7 +1,7 @@
 <?php
 /**
  * @package	mod_db8socialmediashare
- * @author	Peter Martin, www.db8.nl
+ * @author	Peter Martin, db8.eu
  * @copyright	Copyright (C) 2015 Peter Martin. All rights reserved.
  * @license	GNU General Public License version 2 or later.
  */
@@ -11,7 +11,7 @@ if ($loadCSS == 1)
 {
 	$document = JFactory::getDocument();
 	// add minified Font Awesome CSS stylesheet from CDN
-	$document->addStyleSheet('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	$document->addStyleSheet('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 }
 ?>
 <div class="db8socialmediashare<?php echo $params->get('moduleclass_sfx'); ?>">
