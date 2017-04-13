@@ -28,7 +28,7 @@ $socialmedia = array(
         "order" => $params->get('facebook'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_FACEBOOK'),
         "htmlclass" => $params->get('htmlclassfacebook','facebooklink'),
-        "href" => "https://facebook.com/sharer.php?u=" . $url . "&amp;t=" . $title,
+        "href" => "https://www.facebook.com/sharer.php?u=" . $url . "&amp;t=" . $title,
         "image" => $params->get('imagefacebook'),
     ),
     array(
