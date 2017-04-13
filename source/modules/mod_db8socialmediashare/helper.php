@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @package	mod_db8socialmediashare
  * @author	Peter Martin, db8.eu
@@ -11,7 +10,6 @@ defined('_JEXEC') or die;
 $url		= JURI::current();
 $document	= JFactory::getDocument();
 $title		= str_replace('&', 'and', $document->getTitle("title"));
-
 $loadCSS	= $params->get('LoadCSS');
 
 $socialmedia = array(

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @package	mod_db8socialmediashare
  * @author	Peter Martin, db8.eu

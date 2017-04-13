@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @package	mod_db8socialmediashare
  * @author	Peter Martin, db8.eu
@@ -24,15 +23,13 @@ if ($loadCSS == 1)
                 ?>
                 <a title="<?php echo $socialmedia[$a]['mouseover']; ?>" class="<?php echo $socialmedia[$a]['htmlclass']; ?>" href="<?php echo $socialmedia[$a]['href']; ?>" target="_blank">
                     <?php if($params->get('imgcss') == 0) : ?>
-                        <img src=".<?php echo $socialmedia[$a]['image']; ?>" alt="<?php echo $socialmedia[$a]['medium']; ?>">
+                        <img src="<?php echo JUri::root() . $socialmedia[$a]['image']; ?>" alt="<?php echo $socialmedia[$a]['medium']; ?>">
                     <?php else: ?>
                         <span class="hidelink">
                             <?php echo $socialmedia[$a]['medium']; ?>
                         </span>
                         <span class="icon-<?php echo $socialmedia[$a]['medium']; ?>"></span>
                     <?php endif;?>
-
-
                 </a>
                 <?php
             }
