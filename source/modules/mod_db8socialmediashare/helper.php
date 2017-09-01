@@ -34,7 +34,7 @@ $socialmedia = array(
         "order" => $params->get('linkedin'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_LINKEDIN'),
         "htmlclass" => $params->get('htmlclasslinkedin','linkedinlink'),
-        "href" => "https://www.linkedin.com/shareArticle?mini=true&url=" . $url . "&title=" . $title . "&ro=false",
+        "href" => "https://www.linkedin.com/shareArticle?mini=true&url=" . $url . "&amp;title=" . $title . "&amp;ro=false",
         "image" => $params->get('imagelinkedin'),
     ),
     array(
@@ -58,7 +58,7 @@ $socialmedia = array(
         "order" => $params->get('email'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_EMAIL'),
         "htmlclass" => $params->get('htmlclassemail','emaillink'),
-        "href" => "mailto:?subject=" . $title . "&body=" . $url,
+        "href" => "mailto:?subject=" . $title . "&amp;body=" . $url,
         "image" => $params->get('imageemail'),
     )
 );
