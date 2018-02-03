@@ -34,7 +34,7 @@ $socialmedia = array(
         "order" => $params->get('linkedin'),
         "mouseover" => JText::_('MOD_DB8SOCIALMEDIASHARE_LINKEDIN'),
         "htmlclass" => $params->get('htmlclasslinkedin','linkedinlink'),
-        "href" => "https://www.linkedin.com/shareArticle?mini=true&url=" . $url . "&amp;title=" . $title . "&amp;ro=false",
+        "href" => "https://www.linkedin.com/shareArticle?mini=true&amp;url=" . $url . "&amp;title=" . $title . "&amp;ro=false",
         "image" => $params->get('imagelinkedin'),
     ),
     array(
